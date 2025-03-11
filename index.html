@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mau jadi pacarku ga?</title>
+    <title>mau jadi ceweku ga?</title>
     <style>
         body {
             font-family: sans-serif;
@@ -30,20 +30,27 @@
             font-size: 20px;
             font-weight: bold;
         }
+        #terimaKasih {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>mau jadi pacarku ga?</h1>
-    <button id="ya">mau dong</button>
-    <button id="tidak">ga ah males</button>
-    <h2> makasi sudah menjawab ya</h2>
-    <img id="gambar" src="https://i.pinimg.com/236x/37/69/b7/3769b777484ea48cc344c545aa9d5047.jpg">
+    <h1>hi ini faiz, mau jadi ceweku ga?</h1>
+    <button id="ya">mau</button>
+    <button id="tidak">gamau</button>
+    <img id="gambar" src="https://i.pinimg.com/236x/37/69/b7/3769b777484ea48cc344c545aa9d5047.jpg" alt="Gambar spesial">
+    <p id="teks-gambar">LETSGOOOOOOOOOOOOOOOOOOO</p>
+    <p id="terimaKasih">Makasih udah jawab ya!</p>
 
     <script>
         const tombolTidak = document.getElementById('tidak');
         const tombolYa = document.getElementById('ya');
         const gambar = document.getElementById('gambar');
         const teksGambar = document.getElementById('teks-gambar');
+        const terimaKasih = document.getElementById('terimaKasih');
 
         tombolTidak.addEventListener('click', function() {
             const maxX = window.innerWidth - tombolTidak.offsetWidth;
@@ -59,6 +66,7 @@
         tombolYa.addEventListener('click', function() {
             gambar.style.display = 'block';
             teksGambar.style.display = 'block';
+            terimaKasih.style.display = 'block';
             tombolYa.style.display = 'none';
             tombolTidak.style.display = 'none';
         });
